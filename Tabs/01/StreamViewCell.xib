@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="StreamViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10Km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0O-Xe-6l5">
+                        <rect key="frame" x="268" y="76.5" width="45.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbx-su-frl">
+                        <rect key="frame" x="16" y="70" width="42" height="32"/>
+                        <color key="backgroundColor" red="0.5084370251" green="1" blue="0.42352789689999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBw-d1-aQe">
+                        <rect key="frame" x="86" y="71" width="33" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="33" id="eYe-YE-HDT"/>
+                            <constraint firstAttribute="height" constant="27" id="qE1-Gd-y8y"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="danhdau.png">
+                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="likeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fq2-SC-bNU"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjD-TO-aPV">
+                        <rect key="frame" x="127" y="77" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="x0O-Xe-6l5" secondAttribute="bottom" constant="0.5" id="4Ed-E1-gKh"/>
+                    <constraint firstItem="zbx-su-frl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="5oN-yw-SOB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eBw-d1-aQe" secondAttribute="bottom" constant="-1.5" id="OST-OU-V4B"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="x0O-Xe-6l5" secondAttribute="trailing" constant="21.5" id="bS8-QX-ZKZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="zbx-su-frl" secondAttribute="bottom" constant="-5.5" id="dLR-wU-Ikx"/>
+                    <constraint firstItem="cjD-TO-aPV" firstAttribute="leading" secondItem="eBw-d1-aQe" secondAttribute="trailing" constant="8" id="oHy-OY-8Xy"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cjD-TO-aPV" secondAttribute="bottom" constant="-1.5" id="tS8-PJ-XOY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_btLike" destination="eBw-d1-aQe" id="Cy4-Ym-Fkq"/>
+                <outlet property="_lbLike" destination="cjD-TO-aPV" id="8pZ-Xk-CAO"/>
+                <outlet property="_lbLocation" destination="x0O-Xe-6l5" id="Skw-gb-9lc"/>
+                <outlet property="_lbMessage" destination="zbx-su-frl" id="eAO-CB-cyq"/>
+            </connections>
+            <point key="canvasLocation" x="96" y="-247"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="danhdau.png" width="127" height="119"/>
+    </resources>
+</document>

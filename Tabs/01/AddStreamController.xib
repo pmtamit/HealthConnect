@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddStreamController">
+            <connections>
+                <outlet property="_txtAddStream" destination="rR3-kq-org" id="7Fg-pX-GhC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rR3-kq-org">
+                    <rect key="frame" x="8" y="8" width="584" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="158" id="WVO-kp-4jR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="WVO-kp-4jR"/>
+                        </mask>
+                    </variation>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rR3-kq-org" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="208-TD-hak"/>
+                <constraint firstAttribute="trailing" secondItem="rR3-kq-org" secondAttribute="trailing" constant="8" id="NbN-er-QHP"/>
+                <constraint firstAttribute="trailing" secondItem="rR3-kq-org" secondAttribute="trailing" constant="8" id="NrI-9n-f39"/>
+                <constraint firstItem="rR3-kq-org" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="TEj-l0-Gbf"/>
+                <constraint firstAttribute="trailing" secondItem="rR3-kq-org" secondAttribute="trailing" constant="8" id="ZdJ-fn-h80"/>
+                <constraint firstItem="rR3-kq-org" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bCZ-Dj-4RO"/>
+                <constraint firstItem="rR3-kq-org" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dfp-LT-KCx"/>
+                <constraint firstAttribute="trailing" secondItem="rR3-kq-org" secondAttribute="trailing" id="eXQ-Nl-H55"/>
+                <constraint firstItem="rR3-kq-org" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="fSB-tH-doo"/>
+                <constraint firstItem="rR3-kq-org" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="jVd-6S-FHu"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="208-TD-hak"/>
+                    <exclude reference="NbN-er-QHP"/>
+                    <exclude reference="ZdJ-fn-h80"/>
+                    <exclude reference="bCZ-Dj-4RO"/>
+                    <exclude reference="dfp-LT-KCx"/>
+                    <exclude reference="eXQ-Nl-H55"/>
+                    <exclude reference="jVd-6S-FHu"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="340" y="241"/>
+        </view>
+    </objects>
+</document>
